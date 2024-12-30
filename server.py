@@ -9,4 +9,4 @@ connection.listen(5)
 while True:
     connectedsocket, address = connection.accept()
     print("Connection fron {address} establish".format(address = address))
-    
+    connectedsocket.send(bytes("First message", "utf-8"))

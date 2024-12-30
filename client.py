@@ -6,3 +6,4 @@ connection.connect((socket.gethostname(), 8000))
 
 while True:
     message = connection.recv(1024)
+    print(message.decode("utf-8"))
